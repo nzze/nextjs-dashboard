@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async rewrites() {
+    async redirects() {
         return [
             {
-                source: '/cool-page',
-                destination: '/dashboard'
+                source: '/',
+                destination: '/login',
+                permanent: true
             }
         ];
     }
